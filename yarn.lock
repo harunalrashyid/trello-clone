@@ -9381,6 +9381,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:3.1.22":
+  version: 3.1.22
+  resolution: "nanoid@npm:3.1.22"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 42378ebee489ab521aff0722b54ed7d1bcadb023398925f84ce5e160d0b61693f251e94714a3f4c16c7298b06b0f6871c52fdebc967fc48c0bdcffb096f0ee17
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.3.7":
   version: 3.3.7
   resolution: "nanoid@npm:3.3.7"
@@ -12754,11 +12763,13 @@ __metadata:
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
     "@types/styled-components": ^5.1.9
+    nanoid: 3.1.22
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
     styled-components: ^5.2.1
     typescript: ^4.4.2
+    use-immer: 0.5.1
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -13100,6 +13111,16 @@ __metadata:
     querystringify: ^2.1.1
     requires-port: ^1.0.0
   checksum: fbdba6b1d83336aca2216bbdc38ba658d9cfb8fc7f665eb8b17852de638ff7d1a162c198a8e4ed66001ddbf6c9888d41e4798912c62b4fd777a31657989f7bdf
+  languageName: node
+  linkType: hard
+
+"use-immer@npm:0.5.1":
+  version: 0.5.1
+  resolution: "use-immer@npm:0.5.1"
+  peerDependencies:
+    immer: ">=2.0.0"
+    react: ^16.8.0 || ^17.0.1
+  checksum: 8a0af5182dc279345aa72706606a6d589a2d95379e3ec26399eaafbe91e031ab5e31f844836f00b66f1165ea28895696cf441c43a11d713526aad806e07a32e8
   languageName: node
   linkType: hard
 
