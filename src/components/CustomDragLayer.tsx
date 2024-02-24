@@ -5,6 +5,7 @@ import {
   DragPreviewWrapper
 } from '../styles';
 
+import { Card } from './Card';
 import { Column } from './Column';
 
 export const CustomDragLayer = () => {
@@ -16,11 +17,20 @@ export const CustomDragLayer = () => {
   return draggedItem && currentOffset ? (
     <CustomDragLayerContainer>
       <DragPreviewWrapper position={currentOffset}>
-        <Column
-          id={draggedItem.id}
-          text={draggedItem.text}
-          isPreview
-        />
+        {draggedItem.type === 'COLUMN' ? (
+          <Column
+            id={draggedItem.id}
+            text={draggedItem.text}
+            isPreview
+          />
+        ) : (
+          <Card
+            columnId={draggedItem.columnId}
+            isPreview
+            id={draggedItem.id}
+            text={draggedItem.text}
+          />
+        )}
       </DragPreviewWrapper>
     </CustomDragLayerContainer>
   ) : null;
